@@ -2,24 +2,26 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center shadow py-2 px-7 justify-between">
+    <div className="flex items-center shadow lg:py-2 px-3 lg:px-7 justify-between">
       <div className="flex items-center">
         <img
           src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kns4eQZvPHoCBRgLNZwIZmedrDMYvm5sXtKGCyXxnaPneqCNSf7XqoizRRiEQGa8NXT5f23ZPyPi1miVsyPVnVi65oWCsRXusjyHwd4YVbnxcimg1RFbQQmpD6EU-ZHt~hLHfmMzeQMzC7v19MLaQfIUuf1YeoQ-kWVc9VYrVrbjOXmEmqZDJ8dyBWZv6otXywnP8SzvLX9dh3zQZU3B3ZSJBkqW2~aJyuoNC9dp80zTTmBCyxlYNSDmubfi04eN0bucnCKpDZfOfF8uQRIGmPn10IhRIUTMX2IW-jEbC~CEeCq29fanwqAO~tYmgHQMjoVTpnoZUweyvprIPtG~Aw__"
           alt=""
-          className="h-20"
+          className="h-16 lg:h-20"
         />{" "}
-        <p className=" text-[36px] font-[700]">Furniro</p>
+        <p className="text-2xl lg:text-[36px] font-semibold lg:font-[700]">
+          Furniro
+        </p>
       </div>
       <div className="flex items-center gap-20 px-7">
-        <div className="flex items-center gap-10">
+        <div className="lg:flex hidden items-center gap-10">
           <p>Home</p>
           <p>Shop</p>
           <p>About</p>
           <p>Contact</p>
         </div>
 
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-7 lg:gap-10">
           <button>
             <svg
               width="28"
@@ -45,8 +47,8 @@ const Header: React.FC = () => {
               <path
                 d="M24.5002 24.5002L19.2665 19.2572M22.1668 12.2502C22.1668 14.8802 21.122 17.4026 19.2623 19.2623C17.4026 21.122 14.8802 22.1668 12.2502 22.1668C9.6201 22.1668 7.09776 21.122 5.23802 19.2623C3.37828 17.4026 2.3335 14.8802 2.3335 12.2502C2.3335 9.6201 3.37828 7.09776 5.23802 5.23802C7.09776 3.37828 9.6201 2.3335 12.2502 2.3335C14.8802 2.3335 17.4026 3.37828 19.2623 5.23802C21.122 7.09776 22.1668 9.6201 22.1668 12.2502V12.2502Z"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </button>
@@ -61,9 +63,9 @@ const Header: React.FC = () => {
               <path
                 d="M8.16683 3.5C4.94566 3.5 2.3335 6.08533 2.3335 9.275C2.3335 11.8498 3.35433 17.9608 13.4028 24.1383C13.5828 24.2479 13.7895 24.3058 14.0002 24.3058C14.2109 24.3058 14.4175 24.2479 14.5975 24.1383C24.646 17.9608 25.6668 11.8498 25.6668 9.275C25.6668 6.08533 23.0547 3.5 19.8335 3.5C16.6123 3.5 14.0002 7 14.0002 7C14.0002 7 11.388 3.5 8.16683 3.5Z"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

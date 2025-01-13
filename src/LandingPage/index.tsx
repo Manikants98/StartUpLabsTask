@@ -27,12 +27,12 @@ const LandingPage: React.FC = () => {
           backgroundImage:
             "url('https://s3-alpha-sig.figma.com/img/98fb/219f/a11f805aade2224f1d6658764a2395df?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KHtx-QJHDccE65LCTqbdkNj7hiWDFi9~cVSUpP-x39JBuScLm03g2iPhTReIAbjc2GDOgVp8W2MW99d5~CyOB7Q8J8lPohb~2RA1Zey5YLhGlZY6c6wu0yaso5tLS5o~zadurv3PMOMm98L5b06algMQkRYqzHccIPfYPydSWsZB7eoZIW6vG5aWoEyMkm7y6qlOnweq5girg~2RqxvNwm0VrypZe1e9BUf4pOrYo~CUKNxEXCdlzBl0S0Z056WBdSdubpoZkIhoFDubVJIpGMTlDSjqeGUVEC8LhXkpxdyVccEGRaGKW~OX8RyA~2CPrkrcTon1KN6VQAmasiyHXg__')",
         }}
-        className="h-screen w-screen relative bg-cover bg-center flex justify-end"
+        className="lg:h-screen h-[70vh] w-screen relative bg-cover bg-center flex justify-end"
       >
-        <div className="w-[500px] bg-[#FFF3E3] flex flex-col gap-5 absolute right-10 top-52 py-14 rounded-[10px] px-7">
+        <div className="lg:w-[500px] w-11/12 bg-[#FFF3E3] flex flex-col gap-5 absolute right-5 lg:right-10 top-40 lg:top-52 py-14 rounded-[10px] px-7">
           <div className="flex flex-col">
             <p className="tracking-wider">New Arrival</p>
-            <p className="text-[52px] text-[#B88E2F] font-[700]">
+            <p className="lg:text-[52px] text-3xl text-[#B88E2F] font-[700]">
               Discover Our New Collection
             </p>
           </div>
@@ -40,18 +40,22 @@ const LandingPage: React.FC = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </p>
-          <button className="p-4 bg-[#B88E2F] w-40 text-white">BUY NOW</button>
+          <button className="lg:p-4 p-3 bg-[#B88E2F] w-40 text-white">
+            BUY NOW
+          </button>
         </div>
       </div>
       <div className="flex flex-col p-5 gap-10">
         <div className="flex flex-col items-center justify-center ">
           <p className="font-bold text-3xl">Browse The Range</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
-        <div className="grid grid-cols-3 gap-2 place-items-center">
-          {ranges?.map((i) => {
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 lg:gap-2 place-items-center">
+          {ranges?.map((i, index) => {
             return (
-              <div className="flex flex-col gap-5">
+              <div key={index} className="flex flex-col gap-5">
                 <img
                   src={i.image}
                   alt=""
